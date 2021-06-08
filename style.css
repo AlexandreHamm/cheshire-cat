@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Wonderland";
+    src: url("./src/fonts/Wonderland.ttf") format("truetype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+footer{
+    text-align: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 10%;
+}
+h1{
+    padding: 20px;
+    color: white;
+    font-family: "Wonderland";
+    font-weight: 100;
+    opacity: 2%;
+    transition: 1s;
+}
+h1:hover{
+    font-size: 50px;
+    opacity: 70%;
+    transition: 1s;
+}
+
+.eyes{
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.eye{
+    width: 110px;
+    height: 80px;
+    background: rgb(11,50,37);
+    background: linear-gradient(196deg, rgba(11,50,37,1) 12%, rgba(17,110,93,1) 48%, rgba(13,187,156,1) 70%, rgba(0,228,187,1) 92%); 
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50% / 50%;
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 3px 3px rgba(255, 255, 255, 0.247);
+}
+
+.ball{
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%) ease-in-out;
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-left: 3px
+}
+
+img{
+    position: absolute;
+    bottom: -45%;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+/* TEXT STYLE */
+span{
+    display: inline-block;
+}
+#C,#H,#E,#S,#h,#I,#R,#e,#A,#T{
+    margin-left: -10px;
+}
+#C,#E,#h,#R,#c,#T{
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+}
+#H,#S,#I,#e,#A{
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+}
+
+.random{
+    top: 0;
+    left: 0;
+}
